@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEATCALLE</title>
+    <!-- Importar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Importamos fuentes urbanas desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+        /* Estilos generales */
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8d7da; /* Fondo rosa claro */
+        }
+
+        header {
+            background-color: #333333;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 2.8rem;
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            background: linear-gradient(90deg, #ff8c00, #8b0000); /* Colores de la barra nav */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            flex-wrap: wrap; /* Asegura que los botones se ajusten en pantallas pequeñas */
+        }
+
+        nav button {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 0.8rem 1.5rem;
+            margin: 0.5rem;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        nav button:hover {
+            background-color: white;
+            color: #8b0000;
+        }
+
+        section {
+            padding: 4rem 1rem;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.8rem;
+            color: #212529;
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        section p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #495057;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 1rem;
+            font-family: 'Oswald', sans-serif;
+            margin-top: 2rem;
+        }
+
+        /* Sección adicional de apartados */
+        .extra-sections {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .section-box {
+            background-color: #9a9e9a; /* Verde claro */
+            color: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 8px;
+            flex: 1;
+            max-width: 30%;
+            text-align: center;
+        }
+
+        .section-box h3 {
+            font-size: 2rem;
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .section-box p {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        /* Media Queries para mejorar la apariencia en dispositivos pequeños */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2.2rem;
+                padding: 1.2rem 0;
+            }
+
+            nav button {
+                padding: 0.6rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 2.5rem 1rem;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+            }
+
+            section p {
+                font-size: 1.1rem;
+            }
+
+            .extra-sections {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section-box {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 2rem;
+            }
+
+            nav button {
+                padding: 0.6rem 1.1rem;
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 2rem 1rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+
+            .section-box {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BEATCALLE</h1>
+    </header>
+
+    <nav>
+        <button onclick="window.location.href='Inicio.html'">Inicio</button>
+        <button onclick="window.location.href='Catalogo.html'">Catálogo</button>
+        <button onclick="window.location.href='Informacion.html'">Información</button>
+    </nav>
+
+    <section>
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos una empresa dedicada a brindar los mejores servicios y productos a nuestros clientes. 
+            Con años de experiencia en el mercado, nos comprometemos a garantizar la calidad y la satisfacción.
+        </p>
+        <p>
+            Si deseas saber más, no dudes en contactarnos o visitar nuestras redes sociales. ¡Estamos aquí para ayudarte!
+        </p>
+    </section>
+
+    <!-- Secciones adicionales de contacto, cuentas y dirección -->
+    <div class="extra-sections">
+        <div class="section-box">
+            <h3>Contacto</h3>
+            <p>Celular: 3176605269 - 3026781507</p>
+            <p>Email: callebeat3@gmail.com</p>
+        </div>
+        <div class="section-box">
+            <h3>Cuentas</h3>
+            <p>Facebook: /beatcalle</p>
+            <p>Instagram: @beatcalle</p>
+        </div>
+        <div class="section-box">
+            <h3>Dirección</h3>
+            <p>CALLLE 59#15-32 </p>
+            <p>BUCARAMANGA SANTANDER</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 BEATCALLE. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Importar JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
